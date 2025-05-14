@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: discord-translator-bot
+    env: python
+    region: oregan
+    plan: free
+    envVars:
+      - key: DISCORD_TOKEN
+        fromSecret: discord-token
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
