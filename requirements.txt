@@ -1,0 +1,6 @@
+discord.py>=2.0.0
+# googletrans 於 Python3.13 不相容，改用 deep-translator
+# googletrans==4.0.0-rc1
+deep-translator>=1.8.3
+langdetect>=1.0.9
+python-dotenv            # 讀取 .env 環境變數
